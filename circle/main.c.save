@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define PI 3.14
+
+int main()
+{
+    double r,h;
+    double C,S1,S2,V1,V2;
+    scanf("%lf,%lf",&r,&h);
+    C=2*PI*r;
+    S1=PI*r*r;
+    S2=4*S1;
+    V1=4*S1*r/3;
+    V2=S1*h;
+    printf("Hello world!\n");
+    return 0;
+}
