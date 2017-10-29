@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    double I,sum;
+    printf("Please input the interest of this month:");
+    scanf("%lf",&I);
+    I=floo(I/100000);
+    switch(I)
+    {
+        case 0:
+        case 1:sum=I*10/100;
+        case 2:sum=100000*10/100+(I-100000)*7.5/100;
+        case 3:
+        case 4:sum=100000*10/100+100000*7.5/100+(I-200000)*5/100;
+        case 5:
+        case 6:sum=100000*10/100+100000*7.5/100+200000*5/100+(I-400000)*3/100;
+        case 7:
+        case 8:
+        case 9:
+        case(I<=1000000)sum=100000*10/100+100000*7.5/100+200000*5/100+200000*3/100+(I-600000)*1.5/100;
+        default:sum=100000*10/100+100000*7.5/100+200000*5/100+200000*3/100+400000*1.5/100+(I-1000000)*1/100;
+    }
+    printf("Bonus=%lf",sum);
+    return 0;
+}

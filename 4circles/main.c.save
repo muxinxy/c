@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define a 2
+#define b 2
+#define r 1
+
+int main()
+{
+    int h;
+    double x,y,d;
+    printf("Please input x,y:");
+    x=fabs(x);
+    y=fabs(y);
+    d=sqrt(pow((x-a),2)+p)
+    return 0;
+}
