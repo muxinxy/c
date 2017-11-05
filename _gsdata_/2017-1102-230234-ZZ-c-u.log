@@ -1,0 +1,12 @@
+2017-11-02 23:02:34: -- 分析开始 Analyze command
+2017-11-02 23:02:34: 变更：1， 冲突：， 复制时间：， 复制状态：， 错误： , All: 647
+2017-11-02 23:02:34: Left to Right: Delete File: 1 
+2017-11-02 23:02:34: -- 分析已结束。历时 00:00:00, 速度： Many 文件/秒
+2017-11-02 23:02:34: 
+2017-11-02 23:09:29: == 同步开始由 User Command
+2017-11-02 23:09:29: Please click Analyze again because another job has Synced and it invalidated analysis results of this job.
+State file: D:/c/_gsdata_/_file_state_v4._gs
+new: [size=13,159 time=2017-11-02 23:08:11] != 
+old: [size=13,150 time=2017-10-30 23:44:25]
+
+2017-11-02 23:09:29: 

@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define N 100000
+
+int main()
+{
+    int n,i,j;
+    for(i=1;n<=N;n++){
+        if()
+    }
+    printf("Hello world!\n");
+    return 0;
+}

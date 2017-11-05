@@ -1,0 +1,32 @@
+2017-11-05 00:40:32: -- 分析开始 User Command
+2017-11-05 00:40:33: 变更：24， 冲突：， 复制时间：， 复制状态：， 错误： , All: 696
+2017-11-05 00:40:33: Left to Right: Copy File: 24 
+2017-11-05 00:40:33: -- 分析已结束。历时 00:00:01, 速度： 695 文件/秒
+2017-11-05 00:40:33: 
+2017-11-05 00:40:37: == 同步开始由 User Command
+2017-11-05 00:40:39: 创建文件夹 'E:/c/bubsort'
+2017-11-05 00:40:39: 创建文件夹 'E:/c/bubsort/bin'
+2017-11-05 00:40:39: 创建文件夹 'E:/c/bubsort/bin/Debug'
+2017-11-05 00:40:39: 创建文件夹 'E:/c/bubsort/obj'
+2017-11-05 00:40:40: 创建文件夹 'E:/c/bubsort/obj/Debug'
+2017-11-05 00:40:40: 创建文件夹 'E:/c/selsort'
+2017-11-05 00:40:40: 创建文件夹 'E:/c/selsort/bin'
+2017-11-05 00:40:40: 创建文件夹 'E:/c/selsort/bin/Debug'
+2017-11-05 00:40:40: 创建文件夹 'E:/c/selsort/obj'
+2017-11-05 00:40:40: 创建文件夹 'E:/c/selsort/obj/Debug'
+2017-11-05 00:40:41: 新建复制 'D:/c/bubsort/bin/Debug/bubsort.exe' -> 'E:/c/bubsort/bin/Debug/bubsort.exe'
+2017-11-05 00:40:41: 新建复制 'D:/c/bubsort/bubsort.cbp' -> 'E:/c/bubsort/bubsort.cbp'
+2017-11-05 00:40:41: 新建复制 'D:/c/bubsort/bubsort.layout' -> 'E:/c/bubsort/bubsort.layout'
+2017-11-05 00:40:42: 新建复制 'D:/c/bubsort/main.c' -> 'E:/c/bubsort/main.c'
+2017-11-05 00:40:42: 新建复制 'D:/c/bubsort/main.c.save' -> 'E:/c/bubsort/main.c.save'
+2017-11-05 00:40:42: 新建复制 'D:/c/bubsort/obj/Debug/main.o' -> 'E:/c/bubsort/obj/Debug/main.o'
+2017-11-05 00:40:47: 新建复制 'D:/c/selsort/bin/Debug/selsort.exe' -> 'E:/c/selsort/bin/Debug/selsort.exe'
+2017-11-05 00:40:47: 新建复制 'D:/c/selsort/main.c' -> 'E:/c/selsort/main.c'
+2017-11-05 00:40:47: 新建复制 'D:/c/selsort/main.c.save' -> 'E:/c/selsort/main.c.save'
+2017-11-05 00:40:48: 新建复制 'D:/c/selsort/obj/Debug/main.o' -> 'E:/c/selsort/obj/Debug/main.o'
+2017-11-05 00:40:51: 新建复制 'D:/c/selsort/selsort.cbp' -> 'E:/c/selsort/selsort.cbp'
+2017-11-05 00:40:51: 新建复制 'D:/c/selsort/selsort.depend' -> 'E:/c/selsort/selsort.depend'
+2017-11-05 00:40:51: 新建复制 'D:/c/selsort/selsort.layout' -> 'E:/c/selsort/selsort.layout'
+2017-11-05 00:40:51: 新建复制 'D:/c/selsort/selsort.layout.save' -> 'E:/c/selsort/selsort.layout.save'
+2017-11-05 00:40:55: == 同步完成. 历时: 00:00:18, 速度: 10.1 KB/s, 完成: 24, 错误: 
+2017-11-05 00:40:56: 

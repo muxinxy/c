@@ -1,0 +1,15 @@
+2017-10-30 23:33:22: -- Analysis Started by Analyze command
+2017-10-30 23:33:22: 左侧: State file does not exist: D:/c/_gsdata_/_file_state_v4._gs
+2017-10-30 23:33:23: 右侧: State file does not exist: D:/OneDrive/c/_gsdata_/_file_state_v4._gs
+2017-10-30 23:33:23: 变更：4， 冲突：， 复制时间：， 复制状态：642， 错误： , All: 646
+2017-10-30 23:33:23: Left to Right: Copy File: 4 
+2017-10-30 23:33:23: ----- ：分析已结束。 历时 00:00:01， 速度： 646 个文件/秒 -----
+2017-10-30 23:33:23: 
+2017-10-30 23:34:22: New _gsdata_ folder(s) created, so rescan all job folders for their ghosts
+2017-10-30 23:34:22: == Sync Started by User Command
+2017-10-30 23:34:22: 覆盖复制 'D:/c/int/int.layout' -> 'D:/OneDrive/c/int/int.layout'
+2017-10-30 23:34:22: 覆盖复制 'D:/c/int/int.layout.save' -> 'D:/OneDrive/c/int/int.layout.save'
+2017-10-30 23:34:22: 覆盖复制 'D:/c/int/main.c' -> 'D:/OneDrive/c/int/main.c'
+2017-10-30 23:34:22: 覆盖复制 'D:/c/int/obj/Debug/main.o' -> 'D:/OneDrive/c/int/obj/Debug/main.o'
+2017-10-30 23:34:22: ===== ：同步完毕。时间：00:00:00，速度： 0 字节/s =====, 项目同步未必： 646，错误： 
+2017-10-30 23:34:22: 
