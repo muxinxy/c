@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1509726580 source:d:\c\primenum\main.c
+1510069653 source:d:\c\primenum\main.c
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
