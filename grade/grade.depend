@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1511139437 source:d:\c\grade\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

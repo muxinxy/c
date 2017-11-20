@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int years(int year)
+{
+    if(year%400==0||(year%4==0&&year%100!=0))return(29);
+    else return (28);
+}
+
+int main()
+{
+    int y,m,d,sum;
+    int month[]={0,31,28,31,30,31,30,31,31,30,31,30};
+    printf("Please input year,month,day:");
+    scanf("%d,%d,%d",&y,&m,&d);
+    month[2]=years(y);
+    sum=month[m-1]+d;
+    printf("%d/%d/%d is the N")
+    return 0;
+}
