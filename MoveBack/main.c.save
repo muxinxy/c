@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void move(int a[],int m,int *p[])
+{
+    int i;
+    for(i=0;i<m;i++)
+    {
+        p[i]=&a[i+10-m];
+    }
+    for(i=m;i<10;i++)
+    {
+        p[i]=&a[i-m];
+    }
+}
+
+int main()
+{
+    int i,m;
+    int a[10]={1,2,3,4,5,6,7,8,9,10};
+    int *p[10];
+    for(i=0;i<10;i++)
+    {
+        p[i]=&a[i];
+    }
+    for(i=0;i<10;i++)
+    {
+        printf("%d ",*p[i]);
+    }
+    printf("\nPlease input m:");
+    scanf("%d",&m);
+    if(m<0||m>10)printf("Error");
+    else
+    {
+        move(a,m,p);
+        for(i=0;i<10;i++)
+        {
+            printf("%d ",*p[i]);
+    }
+    }
+    return 0;
+}
