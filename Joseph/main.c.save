@@ -1,24 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define M 3
-
-void kill(int a[41],int *p[41])
-{
-    
-}
 
 int main()
 {
-    int i,n,a[41];
-    int *p[41];
-    for(i=0;i<41;i++)
+    int i, index, remain, delete[41], flag[41] = {0};
+    int n=41,p=3;
+    remain = n;
+    index = 0;
+    while (remain >= 1)
     {
-        a[i]=i+1;
+        for (i = 0; i < n; i ++)
+        {
+            if (flag[i] == 0)
+            {
+                index ++;
+                if (index == p)
+                {
+                    flag[i] = 1;
+                    index = 0;
+                    delete[remain - 1] = i + 1;
+                    remain --;
+                }
+            }
+        }
     }
-    for(i=0;i<41;i++)
+    for (i = n - 1; i >= 0; i --)
     {
-        p[i]=&a[i];
+        if (i)
+        {
+          printf("%d\n", delete[i]);
+        }
+        else
+        {
+          printf("%d ", delete[i]);
+        }
     }
-    kill(a,p);
     return 0;
 }
