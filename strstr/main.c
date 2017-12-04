@@ -12,13 +12,14 @@ int strstr1(char *str1,char *str2)
         {
             flag=1;
             j++;
+            i++;
         }
         else
         {
             flag=0;
             j=0;
         }
-        i++;
+        if(flag==0)i++;
         if(j==s)break;
     }
     if(flag)return(i-s);
