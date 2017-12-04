@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int strstr1(char *a,char *b)
+{
+    int i=0,j=0,flag=0;
+    int s=strlen(b);
+    while(a[i]!='\0'&&j<s)
+    {
+        if(a[i]==b[j])
+        {
+            flag=1;
+            j++;
+        }
+        else
+        {
+            flag=0;
+            j=0;
+        }
+        i++;
+        if(j==s)break;
+    }
+    if(flag)return(i-s);
+    else return(-1);
+}
+
+int main()
+{
+    int i;
+    char a,b;
+    printf("Please input string a:");
+    gets(a);
+    printf("Please input string b:");
+    gets(b);
+    
+    i=strstr1(*a,*b);
+    if(i>=0)
+    {
+        printf("True,start from No.%d.",i+1);
+    }
+    else printf("False.");
+    return 0;
+}
