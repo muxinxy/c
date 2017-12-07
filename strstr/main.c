@@ -19,7 +19,7 @@ int strstr1(char *str1,char *str2)
             flag=0;
             j=0;
         }
-        if(flag==0)i++;
+        if(flag==0&&str1[i]!=str2[j])i++;
         if(j==s)break;
     }
     if(flag)return(i-s);
