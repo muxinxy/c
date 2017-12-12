@@ -22,9 +22,11 @@ struct stud
 
 struct stud stu[N];
 
-void data_in()//input data
+void date_in()
 {
     int i,j;
+    //struct stud *p;
+    //p=stu;
     for(i=0;i<N;i++)
     {
         printf("Please input No.%d student's information:\n",i+1);
@@ -47,7 +49,7 @@ void data_in()//input data
     }
 }
 
-void average()//average of score
+void average()
 {
     int i,j;
     double sum;
@@ -62,15 +64,15 @@ void average()//average of score
     }
 }
 
-void print(struct stud *pt)//print the table
+void print(struct stud *pt)
 {
     int j;
     printf("%-15s",pt->num);
     printf("%-15s",pt->name);
-    if(pt->sex=='m')printf("male        ");//print the sex according to whether the sex is f or m
+    if(pt->sex=='m')printf("male        ");
     else printf("female      ");
     printf("%d",pt->birth.year);
-    if(pt->birth.month<10)printf("-0%d",pt->birth.month);//if the month is below 10, append 0 before it
+    if(pt->birth.month<10)printf("-0%d",pt->birth.month);
     else printf("-%d",pt->birth.month);
     if(pt->birth.day<10)printf("-0%-10d",pt->birth.day);
     else printf("-%-10d ",pt->birth.day);
@@ -81,13 +83,13 @@ void print(struct stud *pt)//print the table
     printf("%-15f",pt->ave);
 }
 
-void sort()//sort the scores
+void sort()
 {
     int i,j;
     struct stud *p;
     p=stu;
     struct stud temp;
-    for(i=0;i<N;i++)//use the bubble sort
+    for(i=0;i<N;i++)
     {
         for(j=0;j<N-i;j++)
         {
@@ -99,10 +101,9 @@ void sort()//sort the scores
             }
         }
     }
-    printf("No  number         name           sex            birth           score1         score2         score3         average        \n");//table tittle
+    printf("number         name           sex            birth           score1         score2         score3         average        \n");
     for(;p<stu+N;p++)
     {
-        printf("%d  ",p-stu+1);//print the number of order
         print(p);
         if(p!=stu+3)printf("\n");
     }
