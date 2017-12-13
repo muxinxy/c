@@ -67,13 +67,13 @@ void print(struct stud *pt)//print the table
     int j;
     printf("%-15s",pt->num);
     printf("%-15s",pt->name);
-    if(pt->sex=='m')printf("male        ");//print the sex according to whether the sex is f or m
-    else printf("female      ");
+    if(pt->sex=='m')printf("male           ");//print the sex according to whether the sex is f or m
+    else printf("female         ");
     printf("%d",pt->birth.year);
     if(pt->birth.month<10)printf("-0%d",pt->birth.month);//if the month is below 10, append 0 before it
     else printf("-%d",pt->birth.month);
-    if(pt->birth.day<10)printf("-0%-10d",pt->birth.day);
-    else printf("-%-10d ",pt->birth.day);
+    if(pt->birth.day<10)printf("-0%-7d",pt->birth.day);
+    else printf("-%-7d ",pt->birth.day);
     for(j=0;j<M;j++)
     {
         printf("%-15f",pt->score[j]);
@@ -102,7 +102,7 @@ void sort()//sort the scores
     printf("No  number         name           sex            birth           score1         score2         score3         average        \n");//table tittle
     for(;p<stu+N;p++)
     {
-        printf("%d  ",p-stu+1);//print the number of order
+        printf("%d   ",p-stu+1);//print the number of order
         print(p);
         if(p!=stu+3)printf("\n");
     }
@@ -110,7 +110,7 @@ void sort()//sort the scores
 
 int main()
 {
-    date_in();
+    data_in();
     average();
     sort();
     return 0;
