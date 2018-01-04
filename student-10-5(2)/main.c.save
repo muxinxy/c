@@ -12,6 +12,7 @@ struct date
 
 struct stud
 {
+    
     char num[12];
     char name[9];
     char sex;
@@ -27,17 +28,16 @@ FILE *fp;
 void rff()//read from file
 {
     int i;
-    if((fp=fopen("data","rb"))==NULL)
+    if((fp=fopen("C:\\data","rb"))==NULL)
     {
         printf("can't open this file\n");
         exit(0);
     }
-    getchar();
     for(i=0;i<N;i++)
-        if()
-        fread(&stu[i],sizeof(struct stud),1,fp);
+        if(fread(&stu[i],sizeof(struct stud),1,fp)!=1)
+        printf("file read error\n");
     fclose(fp);
-    printf("read from file successfully");
+    printf("read from file successfully\n\n");
 }
 
 void print(struct stud *pt)//print the table

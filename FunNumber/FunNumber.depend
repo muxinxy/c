@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1514994813 source:d:\c\funnumber\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

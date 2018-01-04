@@ -12,6 +12,7 @@ struct date
 
 struct stud
 {
+
     char num[12];
     char name[9];
     char sex;

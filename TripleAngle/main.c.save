@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+void local(double w)
+{
+    double price=10;
+    if(w>1)price=ceil(w-1)*3;
+    printf("Price:%lf",price);
+}
+
+void near(double w)
+{
+    double price=10;
+    if(w>1)price=ceil(w-1)*4;
+    printf("Price:%lf",price);
+}
+
+void other(double w,int a)
+{
+    double price=15;
+    switch(a)
+    {
+        case 2:price=ceil(w-1)*4
+    }
+    
+}
+
+int main()
+{
+    int a;
+    double w;
+    scanf("%d,%lf",&a,&w);
+    if(a>=0&&a<=4&&w>=0)
+    {
+        switch(a)
+        {
+        case 0:local(w);break;
+        case 1:near(w);break;
+        case 2:
+        case 3:
+        case 4:other(w,a);break;
+        default:
+        }
+    }
+    else if((a<0||a>4)&&w>=0)printf("Error in area");
+    else if(w<0)printf("Error in weight");
+    else printf("Error in area and weight");
+    return 0;
+}
