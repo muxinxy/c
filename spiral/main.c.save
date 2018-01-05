@@ -5,15 +5,15 @@ int main()
 {
     int a[10][10]={{0}};
     int i=0,j=0,k=0,n=0,m=0,num=1,y=0;
-    char s[2]={0,0};
+    char s;
     printf("Please input n(1-10):");
-    gets(s);
-    n=atoi(s);
-    if(n<1||n>10)
+    scanf("%c",&s);
+    if(s<||s>'10')
     {
         printf("Error");
         exit(0);
     }
+    n=atoi(&s);
     y=n*(n+1)/2;
     k=n;
     while(num<=y)
