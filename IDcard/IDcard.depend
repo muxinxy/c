@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1515649257 source:c:\users\administrator\desktop\zz\idcard\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1515649258 source:d:\c\idcard\main.c
+	<stdio.h>
+	<stdlib.h>
+
