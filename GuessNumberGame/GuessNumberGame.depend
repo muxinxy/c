@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1515074074 source:d:\c\guessnumbergame\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<math.h>
+	<windows.h>
+

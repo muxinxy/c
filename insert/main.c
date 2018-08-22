@@ -16,7 +16,7 @@ int main()
     else{
         if(n<a[0])top=0;
         else{
-            while(top>bot+81){
+            while(top>bot+1){
                 if(n>a[(bot+top)/2])bot=(bot+top)/2;
                 else top=(bot+top)/2;
             }
