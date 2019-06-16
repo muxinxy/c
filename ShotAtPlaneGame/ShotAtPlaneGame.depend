@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1514634902 source:d:\c\shotatplanegame\main.c
+	<stdio.h>
+	<conio.h>
+	<stdlib.h>
+	<time.h>
+
