@@ -14,9 +14,9 @@ int map[PLACE_SUM+1][PLACE_SUM+1];//地图的带权邻接矩阵
 */
 struct place
 {
-    char name[PLACE_NAME_LENGTH];//地点名称
-    char show_name[PLACE_NAME_LENGTH];//显示所需的地点名称
-    char info[PLACE_INFO_LENGTH];//地点信息
+    char name[PLACE_NAME_LENGTH];
+    char show_name[PLACE_NAME_LENGTH];
+    char info[PLACE_INFO_LENGTH];
 }pla[PLACE_SUM+1];
 
 /**
@@ -122,7 +122,7 @@ void init()
     strcpy(pla[32].show_name, "北区菜鸟驿站        ");
     strcpy(pla[32].info, "取件、寄件");
 
-    for(i=1;i<=PLACE_SUM;i++)//初始化地图的邻接矩阵
+    for(i=1;i<=PLACE_SUM;i++)
     {
         for(j=1;j<=PLACE_SUM;j++)
         {
@@ -251,6 +251,7 @@ void init()
 void list()
 {
     int i;
+    //int j;
     printf("                                                  地点列表");
     printf("\n*********************************************************************************************************\n*\t");
     for(i=1;i<=PLACE_SUM;i++)
@@ -262,6 +263,17 @@ void list()
         }
     }
     printf("*\n*********************************************************************************************************\n");
+    /*
+    for(i=1;i<=PLACE_SUM;i++)
+    {
+        for(j=1;j<=PLACE_SUM;j++)
+        {
+            printf("%d  ",map[i][j]);
+        }
+        printf("\n\n");
+    }
+    printf("\n");
+    */
 }
 
 /**
@@ -311,7 +323,6 @@ int fun_name()
 
 /**
 * 地点介绍
-* 输入序号或名称查询地点信息
 */
 void information()
 {
@@ -351,11 +362,11 @@ void guide()
 {
     int i,j,u,v,op=0;
     int min=INF,start,end;//最短距离，开始地点序号，结束地点序号
-    int path[PLACE_SUM+1]={0},flag[PLACE_SUM+1]={0};//path数组存储路径信息，flag数组存储标志信息（0表示在路径之外，1表示在路径上）
-    int path2[PLACE_SUM+1]={0},dis[PLACE_SUM+1];//path2数组存储最短路径，dis数组存储距离信息
+    int path[PLACE_SUM+1]={0},flag[PLACE_SUM+1]={0},dis[PLACE_SUM+1];//path数组存储最短路径，flag数组存储标志信息（0表示在路径之外，1表示在路径上）
+    int path2[PLACE_SUM+1]={0};
     while(op!=3)
     {
-        for(i=0;i<=PLACE_SUM;i++)//初始化path数组和flag数组
+        for(i=0;i<=PLACE_SUM;i++)
         {
             path[i]=0;
             flag[i]=0;
@@ -391,17 +402,17 @@ void guide()
         {
             break;
         }
-        for(i=1;i<=PLACE_SUM;i++)//初始化dis数组
+        for(i=1;i<=PLACE_SUM;i++)
         {
             dis[i]=map[start][i];
             if(dis[i]<INF)
-                path[i]=start;//可以从开始地点直接到达
+                path[i]=start;
         }
-        flag[start]=1;//将开始地点的标志设为1
+        flag[start]=1;
         for(i=1;i<PLACE_SUM;i++)
         {
             min=INF;
-            for(j=1;j<=PLACE_SUM;j++)//查找距离开始地点最近的地点
+            for(j=1;j<=PLACE_SUM;j++)
             {
                 if(flag[j]==0 && dis[j]<min)
                 {
@@ -409,8 +420,8 @@ void guide()
                     u=j;
                 }
             }
-            flag[u]=1;//将该地点的标志设为1
-            for(v=1;v<=PLACE_SUM;v++)//根据最近地点更新路径
+            flag[u]=1;
+            for(v=1;v<=PLACE_SUM;v++)
             {
                 if(flag[v]==0 && dis[v]>dis[u]+map[u][v])
                 {
@@ -421,7 +432,7 @@ void guide()
         }
         v=end;
         i=1;
-        while(path[v]!=start)//从路径数组中找出所需的最短路径
+        while(path[v]!=start)
         {
             path2[i++]=path[v];
             v=path[v];
