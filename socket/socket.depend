@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1576657402 source:d:\c\socket\main.c
+	<stdio.h>
+	<WinSock2.h>
+	<time.h>
+
+1577187798 source:e:\c\socket\main.c
+	<stdio.h>
+	<WinSock2.h>
+	<time.h>
+
